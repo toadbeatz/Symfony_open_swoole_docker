@@ -20,17 +20,6 @@ Coroutines in this setup are **manual**, and the full coroutine integration is *
 
 ## Getting Started
 
-Follow the instructions below to get your Symfony project up and running with OpenSwoole.
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/symfony-swoole.git
-cd symfony-swoole
-```
-
-## Getting Started
-
 
 ### 1. Build and start the container
 

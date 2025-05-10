@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  swoole:
+    container_name: swoole
+    build: ./
+    ports:
+      - "8000:9501"
+    volumes:
+      - ./:/var/www/html/my-project
+
+    environment:
+      APP_ENV: dev
+      APP_DEBUG: 1
+    restart: always

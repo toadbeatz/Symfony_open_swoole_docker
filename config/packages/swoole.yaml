@@ -1,0 +1,24 @@
+swoole:  
+  http_server:
+    host: '0.0.0.0'
+    port: 9501
+    settings:
+      reactor_count: 2
+      worker_count: 4
+      buffer_output_size: 2097152
+      log_level: auto
+      #ssl_cert_file: /etc/ssl/certs/fullchain.pem
+      #ssl_key_file: /etc/ssl/private/privkey.pem
+      #ssl: true
+    # hmr:
+    #   enabled: auto
+    api: true
+    static: advanced
+  platform:
+      coroutines:
+        # enabled: true
+  task_worker: # task workers' specific settings
+    services:
+      reset_handler: true # default true, set to false to disable services resetter on task processing end
+    settings:
+      worker_count: 2 # one of: positive number, "auto", or null to disable creation of task worker processes (default: null)

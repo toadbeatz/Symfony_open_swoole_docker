@@ -15,8 +15,6 @@ Coroutines in this setup are **manual**, and the full coroutine integration is *
 ## Requirements
 
 - **Docker**: For running the application in a containerized environment.
-- **PHP 8.4+**: Required for running OpenSwoole.
-- **OpenSwoole**: An asynchronous PHP extension that provides coroutine-enabled server capabilities.
 
 ## Getting Started
 
